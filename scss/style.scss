@@ -1,22 +1,31 @@
 @import "layout.scss";
 
-.ba-menu{
-	display: flex;
-	align-items: center;
-	list-style: none;
+* {
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
-.ba-menu__link{
-	color: inherit;
-	text-decoration: none;
+.ba-header{
+	background: {
+		image: url(../images/hero-bg.jpg);
+		size: cover;
+	};
+	height: 100vh;
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
 }
 
-.btn{
-	background: $primaryColor;
-	min-width: 100px;
-	padding: 0 1em;
+.ba-header__title{
+	font-size: 54px;
+	font-weight: bold;
+}
 
-	&:hover{
-		@include buttonHover;
-	}
+.ba-header__text{
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 29px;
 }
