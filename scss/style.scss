@@ -7,25 +7,299 @@
 	padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    letter-spacing: .16em;
+	line-height: 1.3;
+}
+
 .ba-header{
+	position: relative;
 	background: {
 		image: url(../images/hero-bg.jpg);
 		size: cover;
+		color: #aab5ca;
+		position: 50%;
+		repeat: no-repeat;
 	};
-	height: 100vh;
-	width: 100%;
+	min-height: 100vh;
+	padding: 285px 0 385px;
 	color: #fff;
 	text-align: center;
 	text-transform: uppercase;
 }
 
+.ba-logo svg{
+	margin-bottom: 80px;
+}
+
 .ba-header__title{
-	font-size: 54px;
-	font-weight: bold;
+	font-size: 3.375rem;
+	margin: 0;
+	margin-bottom: 35px;
 }
 
 .ba-header__text{
-	font-size: 15px;
+	font-size: .93333rem;
 	font-weight: 400;
-	line-height: 29px;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+
+.ba-scroll svg{
+	position: absolute;
+	bottom: 115px;
+	transition: .3s;
+}
+
+// ba-about START
+
+.ba-about{
+	padding: 165px 0;
+}
+
+// ba-box START
+
+.ba-box{
+	position: relative;
+    border: 2px solid #3c3c3c;
+    border-top: none;
+	padding-top: 70px;
+	padding-bottom: 25px;
+    font-size: 0.875rem;
+	text-align: center;
+	color: #3c3c3c;
+}
+
+.ba-box__title{
+	position: absolute;
+    font-size: 2.4285rem;
+    left: 20%;
+    top: 0;
+    width: 60%;
+	transform: translateY(-50%);
+	text-transform: uppercase;
+}
+
+.ba-box__infotext{
+	line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.ba-box__text{
+	line-height: 24px;
+}
+
+.ba-box::before{
+	display: block;
+    content: "";
+    position: absolute;
+	width: 25%;
+	height: 2px;
+	left: 0;
+    top: 0;
+    background-color: #3c3c3c;
+}
+
+.ba-box::after{
+	display: block;
+    content: "";
+    position: absolute;
+    width: 25%;
+	height: 2px;
+	right: 0;
+    top: 0;
+    background-color: #3c3c3c;
+}
+
+// ba-box END
+
+// ba-white-box START
+
+.ba-white-box{
+	position: relative;
+    border: 2px solid #fff;
+    border-top: none;
+    padding-top: 70px;
+	padding-bottom: 25px;
+    font-size: 0.875rem;
+	text-align: center;
+	color: #fff;
+}
+
+.ba-white-box__title{
+	position: absolute;
+    font-size: 2.4285rem;
+    left: 20%;
+    top: 0;
+    width: 60%;
+	transform: translateY(-50%);
+	text-transform: uppercase;
+}
+
+.ba-white-box__text{
+	line-height: 24px;
+}
+
+.ba-white-box::before{
+	display: block;
+    content: "";
+    position: absolute;
+	width: 25%;
+	height: 2px;
+	left: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+.ba-white-box::after{
+	display: block;
+    content: "";
+    position: absolute;
+    width: 25%;
+	height: 2px;
+	right: 0;
+    top: 0;
+    background-color: #fff;
+}
+
+// ba-white-box END
+
+// ba-services START
+
+.ba-services{
+	background-color: #aab5ca;
+    background-image: url(../images/services-bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 135px 0 110px;
+}
+
+// ba-wwd START
+
+.ba-wwd{
+	padding: 120px 0 115px;
+}
+.ba-wwd-box{
+	padding-top: 130px;
+	padding-bottom: 90px;
+}
+
+.ba-wwd__title{
+    font-size: 1.4285rem;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.ba-wwd__text{
+	line-height: 26px;
+    font-weight: 400;
+}
+
+.ba-design svg{
+	margin-bottom: 35px;
+}
+
+.ba-design{
+	margin-bottom: 105px;
+}
+
+.ba-development svg{
+	margin-bottom: 35px;
+}
+
+.ba-development{
+	margin-bottom: 105px;
+}
+
+.ba-management svg{
+	margin-bottom: 35px;
+}
+
+// ba-works START
+
+.ba-card{
+	position: relative;
+	height: 100%;
+}
+
+.ba-card__link{
+	max-width: 100%;
+}
+
+.ba-card__img{
+	height: 100%;
+	width: 100%;
+}
+
+.ba-card__title{
+	position: absolute;
+	bottom: 18%;
+    left: 6%;
+    font-size: 2.125rem;
+    color: #fff;
+	text-transform: uppercase;
+	z-index: 10;
+}
+
+.ba-card:hover{
+	opacity: .75;
+	transition: .3s;
+}
+
+// ba-contacts START
+
+.ba-contacts{
+	padding-top: 140px;
+	padding-bottom: 65px;
+}
+
+.ba-contacts-box{
+	padding-bottom: 50px;
+}
+
+.ba-btn{
+	border: 2px solid transparent;
+    background-color: #3c3c3c;
+    color: #fff;
+	padding: 25px 140px;
+	margin-top: 40px;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	cursor: pointer;
+	outline: none;
+	transition: .3s;
+}
+
+.ba-btn:hover{
+	border: 2px solid #3c3c3c;
+	background-color: #fff;
+	color: #3c3c3c;
+}
+
+// ba-footer START
+
+.ba-footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 65px 0;
+}
+
+.ba-footer-info{
+	margin-left: 35px;
+}
+
+.ba-footer__text{
+	font-size: 0.875rem;
+	font-weight: 400;
+	color: #3c3c3c;
+}
+
+.ba-footer__link{
+	color: #3c3c3c;
+	transition: .3s;
+	text-decoration: none;
 }
